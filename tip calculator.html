@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tip Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="images/x-icon" href="./images/favi.png">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <script src="./fontawesome/js/all.min.js"></script>
+        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="tip calculator.css">
+        <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    </head>    
+    <body id="b">
+        <header>
+            <p class="logo"><img src="./images/logo.svg" alt="logo"></p>
+        </header>
+        <div class="container">
+            <div class="ggh">
+                <div class="row mainbody">
+                    <div class="col-md-6 firstborder">
+                        <p>
+                            <form>
+                                <label for="Bill" class="bill">Bill</label><br>
+                                <input type="number" class="leftpart1" placeholder="0">
+                            </form>
+                        </p>
+                        <div class="tip">Select Tip %</div>
+                        <div class="row">
+                            <div class="col-sm-4 col-6">
+                                <button class="btn1" data-tip="5">5%</button>
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <button class="btn1" data-tip="10">10%</button>
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <button class="btn1 active" data-tip="15">15%</button>
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <button class="btn1" data-tip="20">20%</button>
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <button class="btn1" data-tip="25">25%</button>
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <form>
+                                <input class="custom" placeholder="Custom" type="number">
+                                </form>
+                            </div>
+                        </div> 
+                        <form>
+                            <label for="Bill" class="bill">Number of People</label><br>
+                            <input type="number" class="leftpart2" min="1" placeholder="0">
+                        </form>              
+                    </div>
+                    <div class="col-md-6 secondborder">
+                        <div class="rightpart">
+                            <div class="tipamnt mx-4">
+                                <p id="tip">Tip Amount<br><span style="color:#48787b">/ person</span></p>
+                                <div class="doll"><span>$0.00</span></div>
+                            </div>
+                            <div class="totalamnt mx-4">
+                                <p id="total">Total<br><span style="color:#48787b">/ person</span></p>
+                                <div class="doll" id="doll1"><span>$0.00</span></div>
+                            </div>
+                            <div class="reset mx-4">
+                                <button id="bb">RESET</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <p id="new"></p> -->
+        <!--<button id="new_butt">classs</button>-->
+        <script src="Tip calculator.js"></script>
+    </body>
+</html>
